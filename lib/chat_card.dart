@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ChatCard extends StatelessWidget {
-  const ChatCard({super.key});
+  final String title;
+  final String image;
+  const ChatCard({
+    super.key,
+    required this.title,
+    required this.image,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +19,14 @@ class ChatCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         //Chat Avater Image
         children: [
-          Image.asset("assets/images/bornita.png"),
+          Image.asset(image),
           //Contact name and last message
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //Contact name
               Text(
-                "Bornita 2",
+                title,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 17,

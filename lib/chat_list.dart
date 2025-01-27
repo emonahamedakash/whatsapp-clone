@@ -12,16 +12,50 @@ class ChatList extends StatelessWidget {
         child: Column(
           spacing: 15,
           children: [
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
-            ChatCard(),
+            ChatCard(
+              title: 'Bornita 2',
+              image: 'assets/images/bornita.png',
+            ),
+            ChatCard(
+              title: 'Abbu Gp',
+              image: 'assets/images/avater_male.png',
+            ),
+            ChatCard(
+              title: 'My Number',
+              image: 'assets/images/akash.png',
+            ),
+            ChatCard(
+              title: 'Aunty',
+              image: 'assets/images/avater_female.png',
+            ),
+            ChatCard(
+              title: 'Boss',
+              image: 'assets/images/avater_male.png',
+            ),
+            ChatCard(
+              title: 'Manager',
+              image: 'assets/images/avater_female.png',
+            ),
+            ChatCard(
+              title: 'Designer',
+              image: 'assets/images/avater_male.png',
+            ),
+            ChatCard(
+              title: 'Reception',
+              image: 'assets/images/avater_female.png',
+            ),
+            ChatCard(
+              title: 'Boss',
+              image: 'assets/images/avater_male.png',
+            ),
+            ChatCard(
+              title: 'Aunty',
+              image: 'assets/images/avater_female.png',
+            ),
+            ChatCard(
+              title: 'Boss',
+              image: 'assets/images/avater_male.png',
+            ),
           ],
         ),
       ),
