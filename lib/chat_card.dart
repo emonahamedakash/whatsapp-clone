@@ -19,28 +19,36 @@ class ChatCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         //Chat Avater Image
         children: [
-          Image.asset(image),
+          Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: Image.asset(
+              image,
+              width: 50,
+            ),
+          ),
           //Contact name and last message
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              //Contact name
-              Text(
-                title,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 17,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                //Contact name
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  ),
                 ),
-              ),
-              //Last Message
-              Text(
-                "Voice Call",
-                style: TextStyle(
-                  color: Colors.blueGrey,
-                  fontSize: 15,
+                //Last Message
+                Text(
+                  "Voice Call",
+                  style: TextStyle(
+                    color: Colors.blueGrey,
+                    fontSize: 15,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           //Chat time or date
           Text(
